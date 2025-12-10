@@ -38,3 +38,59 @@ projeto-ia/
 ├── ui.py             # Construção da interface visual (Chatbot Gradio).
 ├── constants.py      # Textos estáticos, prompts base e dicionários de rotinas.
 └── requirements.txt  # Lista de dependências do projeto.
+```
+## ⚙️ Instalação e Configuração
+Siga os passos abaixo para rodar o projeto localmente.
+
+1. Pré-requisitos
+Certifique-se de ter o Python instalado em sua máquina.
+
+2. Clonar ou Baixar
+Baixe os arquivos do projeto para uma pasta em seu computador.
+
+3. Instalar Dependências
+Abra o terminal na pasta do projeto e execute:
+
+```Bash
+
+pip install -r requirements.txt
+```
+## 🔑 Configurando a API Key (Importante)
+Para que a inteligência artificial funcione, você precisa de uma chave de API do Google Gemini.
+
+Gere sua chave gratuitamente no Google AI Studio.
+
+Abra o arquivo config.py no seu editor de código.
+
+Localize a variável API_KEY e cole sua chave entre as aspas:
+
+```Python
+
+# Arquivo: config.py
+
+# Cole sua chave AQUI ↓
+API_KEY = "COLE_SUA_CHAVE_DO_GOOGLE_AQUI"
+```
+
+
+## ▶️ Como Rodar
+Com as dependências instaladas e a chave configurada, execute o comando:
+
+```Bash
+
+python main.py
+```
+Após alguns segundos, o terminal exibirá um link local (geralmente http://127.0.0.1:7860). Clique nele para abrir o Tutor no seu navegador.
+
+## 🧩 Como Usar
+1. Escolha a Rotina: Ao iniciar, selecione se deseja treinar a "Redação Completa" ou apenas uma parte (ex: "Apenas Introdução").
+
+2. Defina o Tema: Digite um tema, um eixo temático (ex: "Saúde") ou peça um tema "Aleatório".
+
+3. Interaja:
+
+-  O Tutor pedirá o planejamento ou a escrita do parágrafo.
+
+-  Se a IA responder com dicas de melhoria, reescreva sua resposta.
+
+-  O sistema só avançará para a próxima etapa quando seu texto estiver adequado.
